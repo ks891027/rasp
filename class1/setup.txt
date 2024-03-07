@@ -1,0 +1,13 @@
+git clone https://github.com/acqxi/FlirWithFaceDet.git
+
+sudo apt-get update --allow-releaseinfo-change
+sudo apt install qtbase5-dev -y
+
+cd ~
+git clone https://github.com/groupgets/LeptonModule
+
+#before test capture.sh
+cd ~/LeptonModule/software/raspberrypi_capture/
+
+#before test video.sh
+cd ~/LeptonModule/software/raspberrypi_video/
