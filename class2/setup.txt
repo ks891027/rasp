@@ -1,0 +1,33 @@
+test pylepton_capture
+
+cd ~/pylepton
+./pylepton_capture output.jpg
+gpicview output.jpg
+
+
+test pylepton_overlay
+
+cd ~/pylepton
+./pylepton_overlay
+
+
+test pylepton_preview
+
+cd ~/FlirWithFaceDet/thermal-pi/01-flir
+python3 pylepton_preview.py
+
+
+test pylepton_get_temp.py
+
+cd ~/FlirWithFaceDet/thermal-pi/01-flir
+python3 pylepton_get_temp.py
+
+
+test pylepton_get_temp.py
+
+cd ~/FlirWithFaceDet/thermal-pi/01-flir
+python3 pylepton_temp_colorbar.py 20 60
+*******
+將程式中的 from pylepton import Lepton 與 with Lepton() as l:
+改成 from pylepton.Lepton3 import Lepton3 與 with Lepton3() as l:
+*******
